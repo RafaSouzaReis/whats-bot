@@ -6,7 +6,7 @@ async function startBot() {
   const { state, saveCreds } = await useMultiFileAuthState("auth_info_baileys");
   const sock = makeWASocket({
     auth: state,
-    logger: pino(),
+    logger: pino({ level: "silent" }),
   });
 
   sock.ev.on("creds.update", saveCreds);
