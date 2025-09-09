@@ -1,0 +1,10 @@
+{
+  "name": "whats-bot",
+  "packageManager": "yarn@4.6.0",
+  "type": "module",
+  "dependencies": {
+    "baileys": "^7.0.0-rc.2",
+    "qrcode": "^1.5.4",
+    "sharp": "^0.34.3"
+  }
+}
